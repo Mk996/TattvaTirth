@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>AVM BOOK FAIR - TITLE ADD PAGE</title>
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- providing the links for required files-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container"> 
+            <a class="navbar-brand" href="#">Book Titles</a>
+            &nbsp;
+            &nbsp;
+            <div id="placetoaddfinyear"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products_selection.html">Back
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top:5%;" id="printpdf">
+
+        
+                <label for="addedBookStocks" style="font-size:15pt" id="label">Added Book Stocks:</label>
+                <table class="table table-striped" id="addedBookStocks">
+                    <thead>
+                        <tr>
+                            <th class="titles">Title</th>
+                            <th class="qtys">Qty</th>
+                            <th class="prices">Price/Pcs</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <label>Total Qty : &nbsp;</label><label id="totalqty"></label><br>
+                <button class="btn btn-success" id="getpdf">Get PDF</button>
+            
+
+    </div>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/stock.js"></script>
+    
+
+</body>
+
+</html>

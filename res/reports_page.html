@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>AVM BOOK FAIR - REPORTS PAGE</title>
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- providing the links for required files-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">REPORTS</a>
+            &nbsp;
+            &nbsp;
+            <div id="placetoaddfinyear"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products_selection.html">Back
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <form id="titlesForm" style="padding-top:5%">
+            <div class="form-group row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label for="type">Type:</label>
+                    <select class="form-control" id="type">
+                        <option value="sale">Sale</option>
+                        <option value="purchase">Purchase</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label for="frmdate">From:</label>
+                    <input type="date" class="form-control" id="frmdate">
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label for="todate">To:</label>
+                    <input type="date" class="form-control" id="todate">
+                </div>
+
+            </div>
+            <div class="from-group row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label for="subtype">Sub Type:</label>
+                    <select class="form-control" id="subtype">
+                        <option value="billwise">Bill Wise</option>
+                        <option value="bookwise">Book Wise</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <label for="bname">Book Name:</label>
+                    <input type="text" class="form-control" id="bname" placeholder="Enter Book Name">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <input type="button" class="btn btn-primary" style="margin-top:30px;" id="search" value="Search" />
+                </div>
+
+            </div>
+            <div class="form-group" style="margin-top:2%">
+                <label for="resultTable">Results:</label>
+                <table class="table table-striped" id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>BillNo</th>
+                            <th>Name</th>
+                            <th>BookName</th>
+                            <th>Date</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot style="font-weight:bold;">
+
+                    </tfoot>
+                </table>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/reports_page.js"></script>
+
+
+</body>
+
+</html>

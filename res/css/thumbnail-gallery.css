@@ -1,0 +1,34 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (https://startbootstrap.com/template-overviews/thumbnail-gallery)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-thumbnail-gallery/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.thumbset{
+  width: 70%;
+  text-align: center;
+  margin: 15%
+  
+}
+.thumbset:hover{
+  opacity: 0.7;
+  
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
+
+

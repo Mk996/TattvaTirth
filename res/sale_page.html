@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>AVM BOOK FAIR - SALE PAGE</title>
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- providing the links for required files-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sales</a>
+            &nbsp;
+            &nbsp;
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sale
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="exit_btn">Exit</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <form style="padding-top: 5%;" id="saleForm">
+            <div class="form-group row">
+                <div class="col-sm-7 col-md-7 col-lg-7">
+                    <label for="vname">Buyer Name:</label>
+                    <input type="text" class="form-control" id="vname" placeholder="Enter Buyer Name">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <label for="date">Date:</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <label for="bname">Book Name:</label>
+                    <input type="text" class="form-control" id="bname" placeholder="Enter Book Name">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <label for="bqty">Book Qty:</label>
+                    <input type="number" class="form-control" id="bqty" placeholder="Enter Book Qty">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <label for="bprice">Book Price:</label>
+                    <input type="number" class="form-control" id="bprice" placeholder="Enter Book Price">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <input type="button" class="btn btn-primary" style="margin-top:30px;" id="addbook" value="Add Book" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="addedBooks">Added Books:</label>
+                <table class="table table-striped" id="addedBooks">
+                    <thead>
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label for="btprice">Total Cost:</label>
+                    <input type="number" class="form-control" id="btprice" value="0">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2"></div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label for="btqty">Total Qty:</label>
+                    <input type="number" class="form-control" id="btqty" value="0">
+                </div>
+            </div>
+              
+            
+            <input class="btn btn-success" value="Save Sale" id="saveSale">
+          </form> 
+
+    </div>
+
+
+    
+
+
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/sale_page.js"></script>
+
+</body>
+
+</html>
